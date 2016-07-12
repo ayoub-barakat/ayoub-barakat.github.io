@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title set in pageTitle directive -->
+    <title page-title>AYOUB Barakar Resume</title>
+    <!-- angular materiel -->
+    <!-- Bootstrap -->
+    <link href="./public/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome -->
+    <link href="./public/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./public/css/animate.css" rel="stylesheet">
+    <link id="loadBefore" href="./public/css/style.css" rel="stylesheet">
+    <link href="./public/files/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./public/files/cv.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/files/theme.css" class="design-css">
+    <link rel="stylesheet" href="./public/files/color-13A5CA.css" class="design-css">
+</head>
+<!-- ControllerAs syntax -->
+<!-- Main controller with serveral data used in Inspinia theme on diferent view -->
+<body ng-controller="Ctrl" class="{{$state.current.data.specialClass}}" landing-scrollspy id="page-top">
+<!-- Main view  -->
+<div role="main" class="main">
+
+    <div id="cv-container" data-dyb-calc="{ &quot;height&quot;: &quot;window - (#navbar) - (#ownerbar) - (#incentivebar)&quot; }" style="height: 626px;">
+        <div id="cv" data-the-great-closer="">
+        <div id="header-container">
+        <header id="header">
+        <div data-dyb-cv-compile="true" data-dyb-layout-compile="true" id="download-cv">
+        <a id="download-cv-button" onclick="window.open('https://drive.google.com/file/d/0B3lQc4a1ISgoVGhtTzJJS05RdG8/view', '_blank');"
+        target="_blank">Télécharger</a>
+        </div>
+        <h1 id="user-name">
+                    <a href="" itemprop="name">Ayoub BARAKAT</a>
+        </h1>
+        <h2 id="cv-title">
+        <a href="" itemprop="jobTitle">Ingénieur Génie Logiciel</a>
+        </h2>
+        <div class="widget title dyb-anim-fade" data-widget-portlet="title">
+            </div>
+
+        </header>
+    </div>
+    <div id="headline">
+        <div id="headline-wrapper">
+            <table>
+                <tbody><tr><td>
+                        <div class="widget userInformation dyb-anim-fade" data-widget-portlet="userInformation">
+
+
+                <div data-widget-element="{&quot;id&quot;: &quot;userInformation&quot;, &quot;title&quot;: &quot;Infos&quot; }" class="widget-element">
+                <div class="widget-content">
+                <img class="img-rounded m-b-md" src="./public/files/photo.jpg" itemprop="image" width="120px">
+                <ul class="userinfo-list">
+                            <li class="userinfo-item" id="userinfo-age">
+                    24 ans
+                </li>
+                <li class="userinfo-item" id="userinfo-city">
+                    <a itemprop="homeLocation" data-placement="top" data-html="true" data-dyb-tooltip="" data-dyb-tooltip-content="#user-info-tooltip" target="_blank" data-original-title="" title="">Maroc
+                    </a>
+                </li>
+                    </ul>
+    </div>
+                                    </div>
+
+            </div>
+
+                </td>
+                <td>
+                                                <div class="widget presentation dyb-anim-fade" data-widget-portlet="presentation">
+
+
+                        <div data-widget-element="{&quot;id&quot;: &quot;presentation&quot;, &quot;title&quot;: &quot;Pr\u00e9sentation&quot; }" class="widget-element">
+    <div class="widget-content">
+    <p id="presentation-text"><h5><b>Passionné de nouvelles technologies. </b></h5><br>
+<h5>
+Mon objectif professionnel est d'intégrer une compagnie dynamique et performante, où je pourrai mettre à contribution toutes mes qualités pour le poste d’ingénieur d'études et développement afin de relever des challenges ambitieux, me permettant de participer activement au développement de l’entreprise et d'évoluer par la suite à des postes d'expertises, conseils et formations .</h5></p>
+</div>
+                                    </div>
+
+            </div>
+
+            <div class="widget tags dyb-anim-fade" data-widget-portlet="tags">
+
+
+                        <div data-widget-element="{&quot;id&quot;: &quot;tags&quot;, &quot;title&quot;: &quot;Mots cl\u00e9s&quot; }" class="widget-element">
+    	<div class="widget-content">
+		<ul class="tags-list">
+	        	<li class="tag-item" data-type="tag" data-id="88761">
+                    Etude et Conception
+                </li>
+                <li class="tag-item" data-type="tag" data-id="88767">
+	                Développement Web
+	            </li>
+	        	<li class="tag-item" data-type="tag" data-id="88783">
+                    Développement Mobile
+                </li>
+                <li class="tag-item" data-type="tag" data-id="88789">
+	                Maintenance
+	            </li>
+	        	    </ul>
+	</div>
+                                    </div>
+
+            </div>
+
+                                    </td>
+            </tr></tbody></table>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <section id="cv-menu-wrapper">
+    <nav id="cv-menu" class="clearfix">
+        <a class="cv-menu-item " ng-click="clicked()" ui-sref="home">
+              <i class="fa fa-home"></i>&nbsp;
+                Accueil
+        </a>
+            <a class="cv-menu-item " ng-click="clicked()" ui-sref="experience">
+              <i class="fa fa-suitcase"></i>&nbsp;
+                Expériences
+        </a>
+            <a class="cv-menu-item " ng-click="clicked()" ui-sref="formation">
+              <i class="fa fa-mortar-board"></i>&nbsp;
+                Formations
+        </a>
+            <a class="cv-menu-item " ng-click="clicked()" ui-sref="formation">
+              <i class="fa fa-github"></i>&nbsp;
+                Projects
+        </a>
+            <a class="cv-menu-item " ng-click="clicked()" ui-sref="competence">
+              <i class="fa fa-cubes"></i>&nbsp;
+                Compétences
+        </a>
+            <a class="cv-menu-item " ng-click="clicked()" ui-sref="hobby">
+              <i class="fa fa-futbol-o"></i>&nbsp;
+                Loisirs
+        </a>
+         <a class="cv-menu-item current" ng-click="clicked()" ui-sref="language">
+           <i class="fa fa-language"></i>&nbsp;
+                languages
+        </a>
+        <a class="cv-menu-item current" ng-click="clicked()" ui-sref="para-universitaire">
+          <i class="fa fa-delicious"></i>&nbsp;
+                para-universitaire
+        </a>
+         <a class="cv-menu-item current" ng-click="clicked()" ui-sref="other">
+           <i class="fa fa-bars"></i>&nbsp;
+                others
+        </a>
+        </nav>
+</section>
+    <table id="content-wrapper">
+        <tbody><tr><td id="fixed-col-1">
+                                <div class="widget contacts dyb-anim-fade" data-widget-portlet="contacts">
+
+            <h3 class="widget-title">
+        <span>Contact</span>
+    </h3>
+
+                        <div data-widget-element="{&quot;id&quot;: &quot;contacts&quot;, &quot;title&quot;: &quot;Contact&quot; }" class="widget-element">
+        <div class="widget-content">
+
+
+        <div id="contacts-list" class="lenght3">
+                            <div id="email" class="contact-item" data-dyb-popover="
+                        &lt;a id=&quot;email-adress&quot; data-obf=&quot;98.99.101.102.115.115.98.105.106.110.102.47.102.109.106.101.115.106.116.116.106.65.122.98.105.112.112.47.103.115&quot; data-obf-action=&quot;mailto:&quot; data-obf-value&gt;&lt;/a&gt;
+                        &lt;hr&gt;
+                        &lt;a id=&quot;contact-form&quot; href=&quot;http://www.aelidrissi.com/cv/contact&quot;&gt;Formulaire de contact&lt;/a&gt;
+                    " data-placement="bottom" data-container="#email" data-original-title="" title="">
+                    <i class="dybicon-contacts"></i>                </div>
+                                                            <div id="mobile" class="contact-item" data-placement="bottom" data-container="#mobile" data-dyb-popover="&lt;a id=&quot;mobile-number&quot; data-obf=&quot;49.56.56.57.57.57.50.51.55.51&quot; data-obf-action=&quot;tel:&quot; data-obf-value&gt;&lt;/a&gt;" data-original-title="" title="">
+                        <i class="icon-mobile-phone"></i>                    </div>
+                                                                            <div id="phone" class="contact-item" data-placement="bottom" data-container="#phone" data-dyb-popover="&lt;a id=&quot;phone-number&quot; data-obf=&quot;49.52.55.51.54.56.50.52.58.56&quot; data-obf-action=&quot;tel:&quot; data-obf-value&gt;&lt;/a&gt;" data-original-title="" title="">
+                        <i class="icon-phone"></i>                    </div>
+                                                </div>
+    </div>
+                                    </div>
+
+            </div>
+
+                                <div class="widget professionalPosition dyb-anim-fade" data-widget-portlet="professionalPosition">
+
+            <h3 class="widget-title">
+        <span>Situation professionnelle</span>
+    </h3>
+
+        <div data-widget-element="{&quot;id&quot;: &quot;professionalPosition&quot;, &quot;title&quot;: &quot;Situation professionnelle&quot; }" class="widget-element">
+        <div class="widget-content">
+        <div id="status">
+            <span id="status-title" class="POSTE">En poste</span>
+        </div>
+        <div id="availability">
+            <span id="availability-title" class="WATCH">En simple veille</span>
+        </div>
+    </div>
+                                    </div>
+
+            </div>
+
+                                <div class="widget links dyb-anim-fade" data-widget-portlet="links">
+
+            <h3 class="widget-title">
+        <span>Mes liens</span>
+    </h3>
+
+                 <div data-widget-element="{&quot;id&quot;: &quot;links&quot;, &quot;title&quot;: &quot;Mes liens&quot; }" class="widget-element">
+        <div class="widget-content">
+                <ul class="links-list lenght4">
+                            <li class="link-item-container">
+                    <a href="https://www.linkedin.com/in/barakat-ayoub-7a5417a8?trk=nav_responsive_tab_profile"></a>
+                </li>
+                            <li class="link-item-container">
+                    <a href="http://www.viadeo.com/p/002ol4lkea562z5" target="_blank" data-dyb-tooltip="Viadeo" class="link-item Viadeo" data-type="link" data-id="303897" data-container="body" data-original-title="" title=""></a>
+                </li>
+                            <li class="link-item-container">
+                    <a href="https://github.com/ayoub-barakat" target="_blank" data-dyb-tooltip="Github" class="link-item Github" data-type="link" data-id="303898" data-container="body" data-original-title="" title=""></a>
+                </li>
+                            <li class="link-item-container">
+                    <a href="https://twitter.com/ayoub-barakat" target="_blank" data-dyb-tooltip="Twitter" class="link-item Twitter" data-type="link" data-id="510814" data-container="body" data-original-title="" title=""></a>
+                </li>
+                    </ul>
+    </div>
+    </div>
+
+    </div>
+    </td>
+        <td id="column-wrapper">
+            <div ui-view></div>
+        </td>
+    </tr></tbody></table>
+    </div>
+    </div>
+<!-- jQuery and Bootstrap -->
+<script src="./public/js/jquery/jquery-2.1.1.min.js"></script>
+<script src="./public/js/bootstrap/bootstrap.min.js"></script>
+<!-- Main Angular scripts-->
+<script src="./public/js/angular/angular.js"></script>
+<script src="./public/js/ui-router/angular-ui-router.min.js"></script>
+<script src="./public/module.js"></script>
+<script src="./public/config.js"></script>
+<script src="./public/main.ctrl.js"></script>
+</body>
+</html>
