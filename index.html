@@ -14,14 +14,14 @@
                 $urlRouterProvider.otherwise('/home');
 
              $stateProvider
-              .state('home',   {url: '/home', controller: 'Ctrl', templateUrl: './files/templates/home.tmpl.html' })
-              .state('formation',   {url: '/formation', controller: 'Ctrl', templateUrl: './files/templates/formation.tmpl.html' })
-              .state('experience',   {url: '/experience', controller: 'Ctrl', templateUrl: './files/templates/experience.tmpl.html' })
-              .state('projet',   {url: '/projet', controller: 'Ctrl', templateUrl: './files/templates/projet.tmpl.html' })
-              .state('language',   {url: '/language', controller: 'Ctrl', templateUrl: './files/templates/language.tmpl.html' })
-              .state('other',   {url: '/other', controller: 'Ctrl', templateUrl: './files/templates/other.tmpl.html' })
-              .state('para-universitaire',   {url: '/para-universitaire', controller: 'Ctrl', templateUrl: './files/templates/para-universitaire.tmpl.html' })
-              .state('hobby',   {url: '/hobby', controller: 'Ctrl', templateUrl: './files/templates/hobby.tmpl.html' })
+              .state('home',   {url: '/home', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/home.tmpl.html' })
+              .state('formation',   {url: '/formation', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/formation.tmpl.html' })
+              .state('experience',   {url: '/experience', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/experience.tmpl.html' })
+              .state('projet',   {url: '/projet', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/projet.tmpl.html' })
+              .state('language',   {url: '/language', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/language.tmpl.html' })
+              .state('other',   {url: '/other', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/other.tmpl.html' })
+              .state('para-universitaire',   {url: '/para-universitaire', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/para-universitaire.tmpl.html' })
+              .state('hobby',   {url: '/hobby', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/hobby.tmpl.html' })
 
                 })
             .controller('Ctrl', function ($scope,$http) {
