@@ -14,14 +14,14 @@
                 $urlRouterProvider.otherwise('/home');
 
              $stateProvider
-              .state('home',   {url: '/home', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/home.tmpl.html' })
-              .state('formation',   {url: '/formation', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/formation.tmpl.html' })
-              .state('experience',   {url: '/experience', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/experience.tmpl.html' })
-              .state('projet',   {url: '/projet', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/projet.tmpl.html' })
-              .state('language',   {url: '/language', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/language.tmpl.html' })
-              .state('other',   {url: '/other', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/other.tmpl.html' })
-              .state('para-universitaire',   {url: '/para-universitaire', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/para-universitaire.tmpl.html' })
-              .state('hobby',   {url: '/hobby', controller: 'Ctrl', templateUrl: 'http://ayoub-barakat.github.io/templates/hobby.tmpl.html' })
+              .state('home',   {url: '/home', controller: 'Ctrl', templateUrl: './files/templates/home.tmpl.html' })
+              .state('formation',   {url: '/formation', controller: 'Ctrl', templateUrl: './files/templates/formation.tmpl.html' })
+              .state('experience',   {url: '/experience', controller: 'Ctrl', templateUrl: './files/templates/experience.tmpl.html' })
+              .state('projet',   {url: '/projet', controller: 'Ctrl', templateUrl: './files/templates/projet.tmpl.html' })
+              .state('language',   {url: '/language', controller: 'Ctrl', templateUrl: './files/templates/language.tmpl.html' })
+              .state('other',   {url: '/other', controller: 'Ctrl', templateUrl: './files/templates/other.tmpl.html' })
+              .state('para-universitaire',   {url: '/para-universitaire', controller: 'Ctrl', templateUrl: './files/templates/para-universitaire.tmpl.html' })
+              .state('hobby',   {url: '/hobby', controller: 'Ctrl', templateUrl: './files/templates/hobby.tmpl.html' })
 
                 })
             .controller('Ctrl', function ($scope,$http) {
@@ -54,13 +54,12 @@
         <div id="cv" data-the-great-closer="">
                 <div id="header-container">
         <header id="header">
-                                                                    <div data-dyb-cv-compile="true" data-dyb-layout-compile="true" id="download-cv">
-        <a id="download-cv-button" href="https://drive.google.com/file/d/0B3lQc4a1ISgoVGhtTzJJS05RdG8/view" target="_blank" data-dyb-track-click="{ &quot;action&quot;: &quot;download&quot;, &quot;label&quot;: &quot;download-cv-%cvInfos.id%&quot; }" data-dyb-track-custom="1">Télécharger</a>
-        <a id="download-cv-button" onclick="window.open('https://drive.google.com/file/d/0B3lQc4a1ISgoVGhtTzJJS05RdG8/view', '_blank');" target="_blank" data-dyb-track-click="{ &quot;action&quot;: &quot;download&quot;, &quot;label&quot;: &quot;download-cv-%cvInfos.id%&quot; }" data-dyb-track-custom="1">Télécharger2</a>
-</div>
-                                        <h1 id="user-name">
+        <div data-dyb-cv-compile="true" data-dyb-layout-compile="true" id="download-cv">
+        <a id="download-cv-button" onclick="window.open('https://drive.google.com/file/d/0B3lQc4a1ISgoVGhtTzJJS05RdG8/view', '_blank');" target="_blank" data-dyb-track-click="{ &quot;action&quot;: &quot;download&quot;, &quot;label&quot;: &quot;download-cv-%cvInfos.id%&quot; }" data-dyb-track-custom="1">Télécharger</a>
+        </div>
+        <h1 id="user-name">
                     <a href="http://www.aelidrissi.com/" itemprop="name">Ayoub BARAKAT</a>
-                </h1>
+        </h1>
                             <div class="widget title dyb-anim-fade" data-widget-portlet="title">
 
         
@@ -124,11 +123,16 @@ Mon objectif professionnel est d'intégrer une compagnie dynamique et performant
                         <div data-widget-element="{&quot;id&quot;: &quot;tags&quot;, &quot;title&quot;: &quot;Mots cl\u00e9s&quot; }" class="widget-element">
     	<div class="widget-content">
 		<ul class="tags-list">
-	        	            <li class="tag-item" data-type="tag" data-id="88761">
+	        	<li class="tag-item" data-type="tag" data-id="88761">
+                    Etude et Conception
+                </li> 
+                <li class="tag-item" data-type="tag" data-id="88761">
 	                Développement Web
 	            </li>
-	        	            <li class="tag-item" data-type="tag" data-id="88767">
-	                Développement Mobile
+	        	<li class="tag-item" data-type="tag" data-id="88767">
+                    Développement Mobile
+                </li><li class="tag-item" data-type="tag" data-id="88767">
+	                Maintenance
 	            </li>
 	        	    </ul>
 	</div>
@@ -223,20 +227,20 @@ Mon objectif professionnel est d'intégrer une compagnie dynamique et performant
         <span>Mes liens</span>
     </h3>
 
-                        <div data-widget-element="{&quot;id&quot;: &quot;links&quot;, &quot;title&quot;: &quot;Mes liens&quot; }" class="widget-element">
+                 <div data-widget-element="{&quot;id&quot;: &quot;links&quot;, &quot;title&quot;: &quot;Mes liens&quot; }" class="widget-element">
         <div class="widget-content">
                 <ul class="links-list lenght4">
                             <li class="link-item-container">
-                    <a href="https://www.linkedin.com/profile/view?id=141070747&amp;trk=nav_responsive_tab_profile" target="_blank" data-dyb-tooltip="LinkedIn" class="link-item LinkedIn" data-type="link" data-id="303896" data-container="body" data-original-title="" title=""></a>
+                    <a href="https://www.linkedin.com/in/barakat-ayoub-7a5417a8?trk=nav_responsive_tab_profile" &amp;trk=nav_responsive_tab_profile" target="_blank" data-dyb-tooltip="LinkedIn" class="link-item LinkedIn" data-type="link" data-id="303896" data-container="body" data-original-title="" title=""></a>
                 </li>
                             <li class="link-item-container">
-                    <a href="http://www.viadeo.com/profile/002bfuskkw5wusl" target="_blank" data-dyb-tooltip="Viadeo" class="link-item Viadeo" data-type="link" data-id="303897" data-container="body" data-original-title="" title=""></a>
+                    <a href="http://www.viadeo.com/p/002ol4lkea562z5" target="_blank" data-dyb-tooltip="Viadeo" class="link-item Viadeo" data-type="link" data-id="303897" data-container="body" data-original-title="" title=""></a>
                 </li>
                             <li class="link-item-container">
-                    <a href="https://github.com/AbderrEdrs" target="_blank" data-dyb-tooltip="Github" class="link-item Github" data-type="link" data-id="303898" data-container="body" data-original-title="" title=""></a>
+                    <a href="https://github.com/ayoub-barakat" target="_blank" data-dyb-tooltip="Github" class="link-item Github" data-type="link" data-id="303898" data-container="body" data-original-title="" title=""></a>
                 </li>
                             <li class="link-item-container">
-                    <a href="https://twitter.com/abder_elidrissi" target="_blank" data-dyb-tooltip="Twitter" class="link-item Twitter" data-type="link" data-id="510814" data-container="body" data-original-title="" title=""></a>
+                    <a href="https://twitter.com/ayoub-barakat" target="_blank" data-dyb-tooltip="Twitter" class="link-item Twitter" data-type="link" data-id="510814" data-container="body" data-original-title="" title=""></a>
                 </li>
                     </ul>
     </div>
