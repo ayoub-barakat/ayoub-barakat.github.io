@@ -1,6 +1,6 @@
 function config($urlRouterProvider, $stateProvider) {
 
-                $urlRouterProvider.otherwise('/');
+                $urlRouterProvider.otherwise('/experience');
 
              $stateProvider
               .state('home',   {url: '/home', controller: 'Ctrl', templateUrl: 'templates/home.tmpl.html' })
